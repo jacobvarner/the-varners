@@ -1,0 +1,60 @@
+body {
+  margin-top: 140px;
+  background: #c69ff2; }
+
+header {
+  display: block;
+  height: 140px;
+  width: 100%;
+  background: #250147;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  header #title {
+    font-family: "Cinzel", sarif;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+    display: block;
+    line-height: 100px;
+    margin: 20px; }
+
+.faces-container {
+  width: 840px;
+  display: block;
+  margin: 0px auto;
+  padding: 20px;
+  overflow: auto; }
+  .faces-container .face {
+    width: 200px;
+    display: block;
+    float: left;
+    margin: 0 60px; }
+    .faces-container .face .face-link {
+      text-decoration: none; }
+      .faces-container .face .face-link .face-image {
+        width: 200px;
+        height: 200px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        border-radius: 100px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
+        margin: 0px; }
+      .faces-container .face .face-link .face-name {
+        text-transform: uppercase;
+        font-family: "Lora", serif;
+        font-size: 24px;
+        font-weight: bold;
+        color: #250147;
+        text-align: center;
+        margin: 5px; }
+  .faces-container .face:first-child {
+    margin: 0px 60px 0px 160px; }
+  .faces-container .face:nth-child(3) {
+    margin: 0px 60px 0px 0px; }
+  .faces-container .face:nth-child(5) {
+    margin: 0px 0px 0px 60px; }
+  .faces-container .face:nth-child(6) {
+    margin: 0px 60px 0px 160px; }
+
+/*# sourceMappingURL=main.css.map */
