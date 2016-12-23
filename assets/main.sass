@@ -1,5 +1,8 @@
 $dark-purple: #250147
 $light-purple: #c69ff2
+$purple-1: #350147
+$purple-2: #450147
+$purple-3: #550147
 
 body
   margin-top: 140px
@@ -23,6 +26,15 @@ header
     line-height: 100px
     margin: 20px
 
+  a
+    i
+      color: white
+      height: 30px
+      line-height: 30px
+      position: fixed
+      top: 55px
+      left: 20px
+
 .wrapper
   width: 880px
   display: block
@@ -34,7 +46,6 @@ header
     margin: 0px auto
     padding: 20px
     overflow: auto
-    background: pink
 
     .face
       width: 200px
@@ -103,6 +114,15 @@ header
       line-height: 60px
       margin: 20px
 
+    a
+      i
+        color: white
+        height: 30px
+        line-height: 30px
+        position: fixed
+        top: 35px
+        left: 20px
+
   .wrapper
     width: 100%
 
@@ -111,7 +131,6 @@ header
       display: block
       margin: 0px auto
       padding: 20px 0
-      background: pink
       overflow: auto
 
       .face
@@ -157,6 +176,15 @@ header
       line-height: 40px
       margin: 10px
 
+    a
+      i
+        color: white
+        height: 30px
+        line-height: 30px
+        position: fixed
+        top: 15px
+        left: 20px
+
   .wrapper
     width: 100%
 
@@ -165,7 +193,6 @@ header
       display: block
       margin: 0px auto
       padding: 10px 0
-      background: pink
       overflow: auto
 
       .face
@@ -204,3 +231,70 @@ footer
     a, a:hover, a:visited, a:active
       text-decoration: none
       color: $dark-purple
+
+.page-wrapper
+  width: 100%
+  overflow: auto
+
+  .heading
+    width: 860px
+    display: block
+    margin: 20px auto
+    overflow: auto
+
+    img
+      display: block
+      width: 250px
+      height: 250px
+      -moz-border-radius: 125px
+      -webkit-border-radius: 125px
+      border-radius: 125px
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4)
+      margin: 10px
+      float: left
+
+    h3
+      display: block
+      margin: 75px 20px
+      float: left
+      font-family: 'Lora', sarif
+      font-size: 36px
+      line-height: 40px
+      color: $dark-purple
+      width: 550px
+
+  .about
+    width: 100%
+    height: 300px
+
+  .one
+    background: $purple-1
+    overflow: auto
+
+    img
+      height: 300px
+      width: 300px
+      position: absolute
+      left: 20px
+
+
+  .two
+    background: $purple-2
+    overflow: auto
+
+    img
+      height: 300px
+      width: 300px
+      position: absolute
+      right: 20px
+
+
+  .three
+    background: $purple-3
+    overflow: auto
+
+    img
+      height: 300px
+      width: 300px
+      position: absolute
+      left: 20px
