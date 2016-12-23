@@ -23,48 +23,184 @@ header
     line-height: 100px
     margin: 20px
 
-.faces-container
-  width: 840px
+.wrapper
+  width: 880px
   display: block
-  margin: 0px auto
-  padding: 20px
+  margin: 0 auto
   overflow: auto
 
-  .face
-    width: 200px
+  .faces-container
     display: block
-    float: left
-    margin: 0 60px
+    margin: 0px auto
+    padding: 20px
+    overflow: auto
+    background: pink
 
-    .face-link
-      text-decoration: none
+    .face
+      width: 200px
+      display: block
+      float: left
+      margin: 0 60px
 
-      .face-image
+      .face-link
+        text-decoration: none
+
+        .face-image
+          width: 200px
+          height: 200px
+          -moz-border-radius: 100px
+          -webkit-border-radius: 100px
+          border-radius: 100px
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4)
+          margin: 0px
+
+          &:hover
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4)
+            position: relative
+            bottom: 5px
+
+
+        .face-name
+          text-transform: uppercase
+          font-family: 'Lora', serif
+          font-size: 24px
+          font-weight: bold
+          color: $dark-purple
+          text-align: center
+          margin: 5px
+
+    .face:first-child
+      margin: 0px 60px 0px 160px
+
+    .face:nth-child(3)
+      margin: 0px 60px 0px 0px
+
+    .face:nth-child(5)
+      margin: 0px 0px 0px 60px
+
+    .face:nth-child(6)
+      margin: 0px 60px 0px 160px
+
+@media only screen and (max-width: 880px)
+  body
+    margin-top: 100px
+
+  header
+    display: block
+    height: 100px
+    width: 100%
+    background: $dark-purple
+    position: fixed
+    top: 0
+    left: 0
+
+    #title
+      font-family: 'Cinzel', sarif
+      font-size: 60px
+      text-align: center
+      color: white
+      display: block
+      line-height: 60px
+      margin: 20px
+
+  .wrapper
+    width: 100%
+
+    .faces-container
+      width: 500px
+      display: block
+      margin: 0px auto
+      padding: 20px 0
+      background: pink
+      overflow: auto
+
+      .face
         width: 200px
-        height: 200px
-        -moz-border-radius: 100px
-        -webkit-border-radius: 100px
-        border-radius: 100px
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4)
-        margin: 0px
+        display: block
+        float: left
+        margin: 20px 25px
 
-      .face-name
-        text-transform: uppercase
-        font-family: 'Lora', serif
-        font-size: 24px
-        font-weight: bold
-        color: $dark-purple
-        text-align: center
-        margin: 5px
+      .face:first-child
+        margin: 20px 25px
 
-  .face:first-child
-    margin: 0px 60px 0px 160px
+      .face:nth-child(3)
+        margin: 20px 25px
 
-  .face:nth-child(3)
-    margin: 0px 60px 0px 0px
+      .face:nth-child(5)
+        margin: 20px 25px
 
-  .face:nth-child(5)
-    margin: 0px 0px 0px 60px
+      .face:nth-child(6)
+        margin: 20px 25px
 
-  .face:nth-child(6)
-    margin: 0px 60px 0px 160px
+      .face:nth-child(7)
+        margin: 20px 150px
+
+@media only screen and (max-width: 500px)
+  body
+    margin-top: 60px
+
+  header
+    display: block
+    height: 60px
+    width: 100%
+    background: $dark-purple
+    position: fixed
+    top: 0
+    left: 0
+
+    #title
+      font-family: 'Cinzel', sarif
+      font-size: 40px
+      text-align: center
+      color: white
+      display: block
+      line-height: 40px
+      margin: 10px
+
+  .wrapper
+    width: 100%
+
+    .faces-container
+      width: 300px
+      display: block
+      margin: 0px auto
+      padding: 10px 0
+      background: pink
+      overflow: auto
+
+      .face
+        width: 200px
+        display: block
+        float: left
+        margin: 20px 50px
+
+      .face:first-child
+        margin: 20px 50px
+
+      .face:nth-child(3)
+        margin: 20px 50px
+
+      .face:nth-child(5)
+        margin: 20px 50px
+
+      .face:nth-child(6)
+        margin: 20px 50px
+
+      .face:nth-child(7)
+        margin: 20px 50px
+
+footer
+  display: block
+  width: 100%
+  height: 30px
+  text-align: center
+
+  p
+    font-size: 14px
+    line-height: 30px
+    padding: 0
+    margin: 0
+
+    a, a:hover, a:visited, a:active
+      text-decoration: none
+      color: $dark-purple
